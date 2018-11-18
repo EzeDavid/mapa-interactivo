@@ -8,10 +8,10 @@ marcadorModulo = (function () {
     // Crea un marcador y lo muestra en el mapa
   function mostrarMiMarcador (ubicacion) {
         miMarcador = new google.maps.Marker({
-                position:new google.maps.LatLng(lat,lng),
-                draggable:true,
+                position: ubicacion,
                 map:map,
-                animation:google.maps.Animation.DROP
+                animation:google.maps.Animation.DROP,
+                title:direccion
         });
         /* Completar la función mostrarMiMarcador() para crear un marcador
         en la posición pasada por parámetro y mostrarlo en el mapa.
