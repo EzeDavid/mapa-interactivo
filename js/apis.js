@@ -12,7 +12,7 @@ function inicializarMapa() {
       lat:  -34.6083,
       lng:  -58.3712
     },
-    zoom: 8
+    zoom: 15
   });
 
   geocodificadorModulo.inicializar()

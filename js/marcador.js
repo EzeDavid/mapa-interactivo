@@ -1,13 +1,13 @@
-marcadorModulo = (function () {
-  var miMarcador // El marcador de la direccion buscada
-  var marcadores = [] // Todos los marcadores de la búsqueda
-  var marcadoresRuta = [] // Los marcadores de la ruta
-  var limites // Límites del mapa
-  var infoVentana // La ventana con información
+  let marcadorModulo = (function () {
+  let miMarcador // El marcador de la direccion buscada
+  let marcadores = [] // Todos los marcadores de la búsqueda
+  let marcadoresRuta = [] // Los marcadores de la ruta
+  let limites // Límites del mapa
+  let infoVentana // La ventana con información
 
     // Crea un marcador y lo muestra en el mapa
   function mostrarMiMarcador (ubicacion) {
-        miMarcador = new google.maps.Marker({
+        this.miMarcador = new google.maps.Marker({
                 position: ubicacion,
                 map:map,
                 animation:google.maps.Animation.DROP,
